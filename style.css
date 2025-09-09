@@ -1,0 +1,421 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: linear-gradient(100deg, #000000, #faf6f6);
+  color: #f8f1f1;
+  scroll-behavior: smooth;
+}
+
+nav {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  position:sticky;
+  top: 0;
+  z-index: 1;
+  background: rgba(7, 7, 8, 0.2);
+  backdrop-filter: blur(3px);
+
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding-right: 6px;
+  border-right: 2px solid #fdfdfd;
+}
+/* nav a::after {
+  content: "";
+  display: inline-block;
+  top: 5px;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width 0.3s;
+}
+nav a:hover::after {
+  width: 100%; }*/
+
+
+nav a:hover {
+  background: radial-gradient(circle at 20%, #ff00cc, #3333ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  cursor: pointer;
+}
+
+.iconclr {
+  font-size: 30px;
+  color: black;
+  padding-left: 10px;
+  border: none;
+  align-items: right;
+}
+
+.name-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  margin-top: -2%;
+
+}
+
+.ak {
+  display: flex;
+  font-size: 33px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff00cc, #1212f9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Molle", cursive;
+
+
+}
+
+.name {
+  display: flex;
+  font-size: 10px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff00cc, #3333ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main {
+  display: flex;
+  margin-top: 2%;
+
+}
+
+.image {
+  display: flex;
+  margin-right: 2%;
+  margin-top: 2%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.image:hover {
+  transform: scale(1.02);
+
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  font-family: "Story Script", sans-serif;
+  padding: 1rem;
+  gap: 1rem;
+  font-size: large;
+  line-height: 30px;
+  width: 80%;
+  margin-top: 2%;
+  text-align: justify;
+}
+
+.welcome {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  background: radial-gradient(circle at 20%, #ff00cc, #3333ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+footer {
+  margin: 2px;
+  margin-top: 2%;
+  text-align: center;
+  padding: 1rem;
+  background-color: #0d0d11;
+  color: #ffffff;
+}
+
+.resume {
+  background: rgb(241, 239, 239);
+  color: #1f51ff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 12px;
+  cursor: pointer;
+  text-shadow: 0 0 2px #1f51ff, 0 0 10px #1f51ff;
+  transition: 0.3s;
+  margin-left: 5%;
+
+}
+
+.resume:hover {
+  box-shadow: 0 0 20px #1f51ff, 0 0 40px #1f51ff, 0 0 40px #1f51ff;
+  color: #1f51ff;
+  background-color: transparent;
+
+}
+
+.line {
+  position: sticky;
+  top: 15%;
+  color: rgb(41, 167, 251);
+  font-family: "Story Script", sans-serif;
+}
+
+.line span {
+  background: linear-gradient(90deg, #ff00cc, #1212f9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about {
+  display: flex;
+}
+
+.about-heading {
+  justify-content: center;
+  text-align: center;
+  background: radial-gradient(circle at 20%, #ff00cc, #3333ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-weight: 700;
+  font-size: 50px;
+
+}
+
+.myinfo {
+  display: flex;
+  font-family: "Story Script", sans-serif;
+  padding: 1rem;
+  gap: 1rem;
+  font-size: large;
+  line-height: 30px;
+  width: 60%;
+  margin-top: 2%;
+}
+
+.nccpic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 8%;
+  cursor: pointer;
+  margin-top: -2%;
+  padding: 0%;
+  filter: drop-shadow(0px 0px 10px rgb(0, 0, 0 , 0.5));
+  transition: all 0.3s ease;
+}
+
+.nccpic:hover {
+  transform: scale(1.02);
+   filter: drop-shadow(0px 0px 10px black);
+}
+
+.skills-section {
+  width: 80%;
+  margin: 10%;
+  text-align: center;
+}
+
+.skills-section h2 {
+  background: radial-gradient(circle at 20%, #ff00cc, #3333ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-weight: 700;
+  font-size: 50px;
+  margin-bottom: 6%;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 2fr));
+  gap: 20px;
+}
+
+.skill-card {
+  background: #111;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 0 0 15px #1f51ff;
+  transition: 0.3s;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.skill-card img {
+  width: 40px;
+  margin-bottom: 15px;
+}
+
+.skill-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.skill-card p {
+  font-size: 14px;
+  color: #bbb;
+}
+
+.html:hover {
+  box-shadow: 0 0 20px #e44d26, 0 0 40px #e44d26;
+  border-color: #e44d26;
+}
+
+.css:hover {
+  box-shadow: 0 0 20px #2965f1, 0 0 40px #2965f1;
+  border-color: #2965f1;
+}
+
+.js:hover {
+  box-shadow: 0 0 20px #f7df1e, 0 0 40px #f7df1e;
+  border-color: #f7df1e;
+}
+
+.react:hover {
+  box-shadow: 0 0 20px #61dafb, 0 0 40px #61dafb;
+  border-color: #61dafb;
+}
+
+.node:hover {
+  box-shadow: 0 0 20px #68a063, 0 0 40px #68a063;
+  border-color: #68a063;
+}
+
+.mongo:hover {
+  box-shadow: 0 0 20px #4db33d, 0 0 40px #4db33d;
+  border-color: #4db33d;
+}
+
+.adobe:hover {
+  box-shadow: 0 0 20px #ff0000, 0 0 40px #ff0000;
+  border-color: #ff0000;
+}
+
+.word:hover {
+  box-shadow: 0 0 20px #0262f1, 0 0 40px #002afe;
+  border-color: #0666f7;
+}
+
+.excel:hover {
+  box-shadow: 0 0 20px #0bff79, 0 0 40px #14df6f;
+  border-color: #14e170;
+}
+
+.ppt:hover {
+  box-shadow: 0 0 20px #d24726, 0 0 40px #d24726;
+  border-color: #d24726;
+}
+
+.contact-header h2 {
+  justify-content: center;
+  text-align: center;
+  background: radial-gradient(circle at 20%, #ff00cc, #3333ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-weight: 700;
+  font-size: 50px;
+  margin-bottom: 2%;
+}
+
+.contact-container {
+  width: 70%;
+  margin-top: 3%;
+  margin-left: 15%;
+  padding: 30px;
+  border-radius: 15px;
+  background: #111;
+  box-shadow: 0 0 20px #1f51ff;
+  color: white;
+}
+
+.contact-container h2 {
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 2%;
+  text-decoration: underline;
+}
+
+.contact-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin: 8px 0;
+}
+
+.contact-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid #1f51ff;
+  border-radius: 8px;
+  background: black;
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: 0 0 10px #1f51ff;
+}
+
+.send-btn {
+  background: black;
+  color: #1f51ff;
+  font-weight: bold;
+  padding: 12px;
+  border: 2px solid #1f51ff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.send-btn:hover {
+  box-shadow: 0 0 20px #1f51ff, 0 0 40px #1f51ff;
+  color: white;
+}
+
+.certificates label {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background: radial-gradient(circle at 20%, #ff00cc, #3333ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-weight: 700;
+  font-size: 50px;
+  margin-top: -3%;
+  margin-bottom: 6%;
+
+}
