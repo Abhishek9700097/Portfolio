@@ -229,6 +229,7 @@ footer {
 .skills-section {
   width: 80%;
   margin: 10%;
+  margin-top: auto;
   text-align: center;
 }
 
